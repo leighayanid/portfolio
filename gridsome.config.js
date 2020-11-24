@@ -1,3 +1,6 @@
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+	.BundleAnalyzerPlugin;
+
 module.exports = {
 	siteName: "Leigh Dinaya",
 	siteUrl: "https://leighdinaya.com",
@@ -14,6 +17,9 @@ module.exports = {
 		const svgRule = config.module.rule("svg");
 		svgRule.uses.clear();
 		svgRule.use("vue-svg-loader").loader("vue-svg-loader");
+		config
+			.plugin("BundleAnalyzerPlugin")
+			.use(BundleAnalyzerPlugin, [{ analyzerMode: "static" }]);
 	},
 
 	plugins: [

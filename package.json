@@ -20,10 +20,11 @@
   "devDependencies": {
     "gridsome-plugin-purgecss": "^1.0.12",
     "gridsome-plugin-service-worker": "^0.1.5",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.0",
     "vue-loader": "^15.9.2",
-    "vue-svg-loader": "^0.16.0"
+    "vue-svg-loader": "^0.16.0",
+    "webpack-bundle-analyzer": "^4.1.0"
   }
 }
