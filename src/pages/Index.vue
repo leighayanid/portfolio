@@ -30,9 +30,6 @@
 					/>
 					<Pager :info="$page.posts.pageInfo" />
 				</div>
-				<div class="tags">
-					<AllPostTags />
-				</div>
 			</div>
 		</div>
 	</Layout>
@@ -40,7 +37,7 @@
 
 <page-query>
 query($page: Int) {
-  posts: allPost(filter: { published: { eq: true }}, perPage: 7, page: $page) @paginate {
+  posts: allPost(filter: { published: { eq: true }}, perPage: 5, page: $page) @paginate {
      pageInfo {
       totalPages
       currentPage
@@ -54,7 +51,6 @@ query($page: Int) {
         logo_image
         path
         tags {
-          id
           title
           path
         }
@@ -64,7 +60,6 @@ query($page: Int) {
 }
 </page-query>
 <script>
-import AllPostTags from "~/components/AllPostTag.vue";
 import PostCard from "~/components/PostCard.vue";
 import { Pager } from "gridsome";
 import Textra from "~/components/Textra.vue";
@@ -86,38 +81,16 @@ export default {
 	components: {
 		PostCard,
 		Pager,
-		AllPostTags,
 		Textra,
 	},
 };
 </script>
 
 <style lang="scss" scoped>
-.home {
-	display: flex;
-	align-content: flex-start;
-	justify-content: flex-start;
-	align-items: flex-start;
-
-	@media screen and (max-width: 800px) {
-		flex-direction: column;
-	}
-}
-
-.tags {
-	flex-basis: 35%;
-	margin-left: 0.7rem;
-	@media screen and (max-width: 800px) {
-		width: 100%;
-		margin-left: 0;
-		margin-bottom: 1rem;
-	}
-}
-
 .posts {
 	display: flex;
 	flex-direction: column;
-	flex-basis: 70%;
+	width: 75%;
 
 	@media screen and (max-width: 900px) {
 		width: 100%;

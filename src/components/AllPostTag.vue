@@ -1,16 +1,13 @@
 <template>
-	<div class="content-box">
-		<h4>Tags</h4>
-		<div class="post-tags">
-			<g-link
-				class="post-tags__link"
-				v-for="tag in $static.allTag.edges"
-				:key="tag.id"
-				:to="tag.node.path"
-			>
-				{{ tag.node.title }}
-			</g-link>
-		</div>
+	<div class="post-tags">
+		<g-link
+			class="post-tags__link"
+			v-for="tag in $static.allTag.edges"
+			:key="tag.id"
+			:to="tag.node.path"
+		>
+			{{ tag.node.title }}
+		</g-link>
 	</div>
 </template>
 
@@ -29,20 +26,10 @@
 </static-query>
 
 <style lang="scss" scoped>
-@media screen and (max-width: 800px) {
-	.content-box {
-		margin-top: 1rem;
-	}
-}
-
-h4 {
-	margin-top: 0;
-	margin-bottom: 1rem;
-}
-
 .post-tags {
 	display: flex;
 	flex-wrap: wrap;
+	margin-bottom: 1rem;
 
 	a {
 		margin-bottom: 1em;
