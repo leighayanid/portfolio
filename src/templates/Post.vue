@@ -41,12 +41,14 @@
 import PostMeta from "~/components/PostMeta";
 import PostTags from "~/components/PostTags";
 import Author from "~/components/Author.vue";
+import VueCobra from "~/components/VueCobra.vue";
 
 export default {
 	components: {
 		Author,
 		PostMeta,
 		PostTags,
+		VueCobra,
 	},
 	metaInfo() {
 		return {
@@ -82,15 +84,6 @@ query Post ($id: ID!) {
   }
 }
 </page-query>
-
-<script>
-import vueCobra from "vue-cobra";
-export default {
-	components: {
-		vueCobra,
-	},
-};
-</script>
 
 <style lang="scss">
 .post {
