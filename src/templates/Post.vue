@@ -1,5 +1,6 @@
 <template>
 	<Layout>
+		<vue-cobra :height="5" :zIndex="900" color="#FFCC00" :opacity="0.95" />
 		<div class="post-title">
 			<h2 class="post-title__text">
 				{{ $page.post.title }}
@@ -81,6 +82,15 @@ query Post ($id: ID!) {
   }
 }
 </page-query>
+
+<script>
+import vueCobra from "vue-cobra";
+export default {
+	components: {
+		vueCobra,
+	},
+};
+</script>
 
 <style lang="scss">
 .post {
