@@ -102,6 +102,10 @@
 	img {
 		width: 25%;
 		margin-top: 1rem;
+
+		@media screen and (max-width: 800px) {
+			width: 50%;
+		}
 	}
 }
 </style>
