@@ -44,6 +44,22 @@ export default {
 	font-display: swap;
 }
 
+::-webkit-scrollbar {
+	width: 12px;
+	background-color: #eff1f5;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 3px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #515769;
+	border: 2px solid #eff1f5;
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
