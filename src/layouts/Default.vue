@@ -25,21 +25,21 @@ export default {
 <style lang="scss">
 @font-face {
 	font-family: Merriweather;
-	src: url(../assets/fonts/Merriweather-Regular.ttf);
+	src: url(../assets/fonts/Merriweather-Regular.woff2);
 	font-weight: normal;
 	font-display: swap;
 }
 
 @font-face {
 	font-family: Fira Sans;
-	src: url(../assets/fonts/FiraSans-Regular.ttf);
+	src: url(../assets/fonts/FiraSans-Regular.woff2);
 	font-weight: normal;
 	font-display: swap;
 }
 
 @font-face {
 	font-family: Fira Sans;
-	src: url(../assets/fonts/FiraSans-Medium.ttf);
+	src: url(../assets/fonts/FiraSans-Medium.woff2);
 	font-weight: medium;
 	font-display: swap;
 }
