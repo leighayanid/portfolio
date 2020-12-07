@@ -8,7 +8,7 @@
 						:data="words"
 						:timer="2"
 						:infinite="true"
-						filter="bottom-top"/></strong
+						filter="top-bottom"/></strong
 				><br />
 				I build things for the web
 			</h1>
