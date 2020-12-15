@@ -2,15 +2,9 @@
   <Layout>
     <div class="welcome">
       <h1 class="welcome-text">
-        Mabuhay! I'm Leigh Dinaya<br />
-        <strong
-          ><textra
-            :data="words"
-            :timer="2"
-            :infinite="true"
-            filter="top-bottom"/></strong
-        ><br />
-        I build things for the web
+        Mabuhay! I'm <strong>Leigh Dinaya</strong><br />
+        <textra :data="words" :timer="2" :infinite="true" filter="top-bottom" />
+        I <strong>build</strong> things for the <strong>web</strong>
       </h1>
       <p class="welcome-intro">
         Welcome to my website, a place where I share tips, tutorials, useful
@@ -111,8 +105,29 @@ hr {
   margin: 0;
 }
 
+p {
+  margin-top: 0;
+}
+
 strong {
-  float: left;
-  margin-right: 5px;
+  position: relative;
+  background: none;
+
+  &::after {
+    content: "";
+    background: rgba(#e59200, 0.3);
+    position: absolute;
+    left: 10px;
+    bottom: -2px;
+    width: calc(100% - 5px);
+    height: calc(100% - 22.5px);
+    z-index: -10;
+    transition: 0.35s cubic-bezier(0.5, 0.1, 0, 2.05);
+
+    @media screen and (max-width: 800px){
+       width: calc(100% - 10px);
+    height: calc(100% - 15px);
+    }
+  }
 }
 </style>
