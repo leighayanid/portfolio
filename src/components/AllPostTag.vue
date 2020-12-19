@@ -1,14 +1,14 @@
 <template>
-  <div class="post-tags">
-    <g-link
-      class="post-tags__link"
-      v-for="tag in $static.allTag.edges"
-      :key="tag.id"
-      :to="tag.node.path"
-    >
-      {{ tag.node.title }}
-    </g-link>
-  </div>
+	<div class="post-tags">
+		<g-link
+			class="post-tags__link"
+			v-for="tag in $static.allTag.edges"
+			:key="tag.id"
+			:to="tag.node.path"
+		>
+			{{ tag.node.title }}
+		</g-link>
+	</div>
 </template>
 
 <static-query>
@@ -27,23 +27,24 @@
 
 <style lang="scss" scoped>
 .post-tags {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1rem;
 
-  a {
-    margin-bottom: 1em;
-    font-size: 0.7em;
-    text-decoration: none;
-    padding: 0.2em 0.75em;
-    border-radius: 15px;
-    background: var(--title-color);
-    color: var(--bg-color) !important;
+	a {
+		margin-bottom: 1em;
+		margin-right: 0.5em;
+		font-size: 0.7em;
+		text-decoration: none;
+		padding: 0.2em 0.75em;
+		border-radius: 15px;
+		border: 2px solid var(--title-color);
+		color: var(--body-color) !important;
 
-    &:hover {
-      background: var(--bg-color);
-      color: var(--body-color) !important;
-    }
-  }
+		&:hover {
+			background: var(--bg-color);
+			color: var(--body-color) !important;
+		}
+	}
 }
 </style>
