@@ -1,42 +1,42 @@
 // Default variables
 html {
-  --base-font-size: 18px;
+	--base-font-size: 18px;
 }
 
 // Light default theme
 body {
-  --bg-color: #f3f7f9;
-  --bg-content-color: white;
-  --bg-code: #fffbf3;
-  --body-color: #444;
-  --title-color: rgb(39, 39, 39);
-  --link-color: #e59200;
-  --border-color: rgba(0, 0, 0, 0.1);
-  --space: 0.5rem;
-  --content-width: 860px;
-  --header-height: 80px;
-  --radius: 5px;
+	--bg-color: #f3f7f9;
+	--bg-content-color: white;
+	--bg-code: #fffbf3;
+	--body-color: #444;
+	--title-color: rgb(39, 39, 39);
+	--link-color: #e59200;
+	--border-color: rgba(0, 0, 0, 0.1);
+	--space: 0.5rem;
+	--content-width: 860px;
+	--header-height: 80px;
+	--radius: 5px;
 }
 
 // Make  things smaller for mobile
 @media screen and (max-width: 650px) {
-  html {
-    --base-font-size: 17px;
-  }
+	html {
+		--base-font-size: 17px;
+	}
 
-  body {
-    --space: 1.5rem;
-    --header-height: 60px;
-  }
+	body {
+		--space: 1.5rem;
+		--header-height: 60px;
+	}
 }
 
 // Override variables for light theme
 body[data-theme="dark"] {
-  --bg-color: #18191c;
-  --bg-content-color: #1e2023;
-  --bg-code: rgba(0, 0, 0, 0.3);
-  --border-color: rgba(255, 255, 255, 0.1);
-  --body-color: #ced8de;
-  --title-color: #ffcc00;
-  --link-color: #eeeeee;
+	--bg-color: #18191c;
+	--bg-content-color: #1e2023;
+	--bg-code: rgba(0, 0, 0, 0.3);
+	--border-color: rgba(255, 255, 255, 0.1);
+	--body-color: #ced8de;
+	--title-color: #ffcc00;
+	--link-color: #eeeeee;
 }
