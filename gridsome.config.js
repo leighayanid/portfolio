@@ -91,6 +91,11 @@ module.exports = {
 					},
 				],
 				searchFields: ["title", "link", "path"],
+				options: {
+					chunk: true,
+					compress: true,
+					autoFetch: "/search",
+				},
 			},
 		},
 		{
