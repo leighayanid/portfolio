@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="welcome">
-      <img src="https://github.com/leighayanid.png" alt="welcome-pic" />
+      <g-image src="https://github.com/leighayanid.png" alt="welcome-pic" />
       <div>
         <h1 class="welcome-text">
           Mabuhay! I'm <strong>Leigh Dinaya</strong><br />
@@ -113,7 +113,6 @@ hr {
   margin: 0;
 }
 
-
 strong {
   position: relative;
   background: none;
@@ -143,21 +142,30 @@ strong {
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
-
-    img {
-      width: 40%;
-      margin: 0 auto;
-    }
   }
 
   img {
     border-radius: 50%;
-    height: 10rem;
+    width: 20%;
+    height: 20%;
     margin-right: 2rem;
+    box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, 0.1);
+
+    @media screen and (max-width: 800px) {
+      width: 30%;
+      height: 30%;
+      margin: 1rem auto;
+    }
   }
 
   &-text {
     width: 100%;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+    @media screen and (max-width: 800px) {
+     text-align: center;
+    }
   }
 
   &-intro {

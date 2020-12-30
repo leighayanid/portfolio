@@ -27,7 +27,6 @@
     "sass-loader": "^8.0.0",
     "vue-eslint-parser": "^7.3.0",
     "vue-loader": "^15.9.2",
-    "vue-svg-loader": "^0.16.0",
     "webpack-bundle-analyzer": "^4.1.0"
   }
 }
