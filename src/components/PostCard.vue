@@ -10,7 +10,7 @@
       :src="post.logo_image"
     />
     <div class="post-card__content">
-      <h3 class="post-card__title" v-html="post.title" />
+      <h2 class="post-card__title" v-html="post.title" />
       <PostMeta class="post-card__meta" :post="post" />
       <PostTags class="post-card__tags" :post="post" />
       <g-link class="post-card__link" :to="post.path">Link</g-link>
