@@ -22,48 +22,18 @@
 			</div>
 		</div>
 		<div class="content">
-			<h3>Recent Blogs</h3>
+			<h3>Featured Articles</h3>
 			<div class="home">
 				<div class="posts">
-					<PostCard
-						v-for="edge in $page.posts.edges"
-						:key="edge.node.id"
-						:post="edge.node"
-					/>
-					<Pager :info="$page.posts.pageInfo" />
+					<featured-post></featured-post>
 				</div>
 			</div>
 		</div>
 	</Layout>
 </template>
 
-<page-query>
-query($page: Int) {
-  posts: allPost(filter: { published: { eq: true }}, perPage: 5, page: $page) @paginate {
-     pageInfo {
-      totalPages
-      currentPage
-    }
-    edges {
-      node {
-        id
-        title
-        date (format: "D. MMMM YYYY")
-        timeToRead
-        logo_image
-        path
-        tags {
-          title
-          path
-        }
-      }
-    }
-  }
-}
-</page-query>
 <script>
-import PostCard from "~/components/PostCard.vue";
-import { Pager } from "gridsome";
+import FeaturedPost from "~/components/FeaturedPost.vue";
 import Textra from "~/components/Textra.vue";
 
 export default {
@@ -81,9 +51,8 @@ export default {
 		};
 	},
 	components: {
-		PostCard,
-		Pager,
 		Textra,
+		FeaturedPost,
 	},
 };
 </script>
