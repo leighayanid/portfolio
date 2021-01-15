@@ -1,110 +1,115 @@
 html {
-  font-size: var(--base-font-size);
+	font-size: var(--base-font-size);
 }
 
 body {
-  font-family: "Merriweather", serif;
-  font-display: swap;
-  font-weight: 100;
-  line-height: 1.75;
+	font-family: "Merriweather", serif;
+	font-display: swap;
+	font-weight: 100;
+	line-height: 1.75;
 }
 
 p {
-  margin-bottom: 1.25em;
-  font-size: 0.95em;
+	margin-bottom: 1.25em;
+	font-size: 0.95em;
 
-  @media screen and (max-width: 800px) {
-    font-size: 0.85em;
-  }
+	@media screen and (max-width: 800px) {
+		font-size: 0.85em;
+	}
 }
 
 h1,
 h2,
 h3,
 h5 {
-  transition: color 0.6s;
-  color: var(--title-color);
-  margin: 2.75rem 0 1rem;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 600;
-  line-height: 1.25;
-  letter-spacing: 1px;
+	transition: color 0.6s;
+	margin: 2.75rem 0 1rem;
+	font-family: "Fira Sans", sans-serif;
+	font-weight: 600;
+	line-height: 1.25;
+	letter-spacing: 1px;
 }
 
 .welcome-text {
-  color: var(--body-color);
+	color: var(--body-color);
 
-  strong {
-    color: var(--title-color);
-  }
+	strong {
+		color: var(--title-color);
+	}
 }
 
 h1 {
-  margin-top: 0;
-  font-size: 1.702em;
+	margin-top: 0;
+	font-size: 1.702em;
 
-  @media screen and (max-width: 800px) {
-    font-size: 1.502em;
-  }
+	@media screen and (max-width: 800px) {
+		font-size: 1.502em;
+	}
 }
 
 h2 {
-  font-size: 1.402em;
-  @media screen and (max-width: 800px) {
-    font-size: 1.202em;
-  }
+	font-size: 1.402em;
+	@media screen and (max-width: 800px) {
+		font-size: 1.202em;
+	}
 }
 
 h3 {
-  font-size: 1.224em;
+	font-size: 1.224em;
 
-  @media screen and (max-width: 800px) {
-    font-size: 1.024em;
-  }
+	@media screen and (max-width: 800px) {
+		font-size: 1.024em;
+	}
 }
 
 h5 {
-  font-size: 1.025em;
+	font-size: 1.025em;
 }
 
 small {
-  font-size: 0.689em;
+	font-size: 0.689em;
 }
 
 strong {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 blockquote {
-  border-left: 4px solid var(--border-color);
-  padding-left: calc(var(--space) / 2);
-  color: var(--title-color);
+	border-left: 4px solid var(--border-color);
+	padding-left: calc(var(--space) / 2);
+	color: var(--title-color);
 }
 
 em {
-  font-style: italic;
-  background: var(--bg-color);
-  padding: 1px 10px;
-  border-radius: 5px;
+	font-style: italic;
+	background: var(--bg-color);
+	padding: 1px 10px;
+	border-radius: 5px;
 }
 
 ul {
-  list-style-type: disc;
-  margin-left: 1.25em;
-  margin-bottom: 1.25em;
+	list-style-type: disc;
+	margin-left: 1.25em;
+	margin-bottom: 1.25em;
 
-  li {
-    margin-bottom: 0.6em;
-  }
+	li {
+		margin-bottom: 0.6em;
+	}
 }
 
 ol {
-  list-style-type: decimal;
-  margin-left: 1.25em;
-  margin-bottom: 1.25em;
+	list-style-type: decimal;
+	margin-left: 1.25em;
+	margin-bottom: 1.25em;
 
-  li {
-    margin-bottom: 0.6em;
-  }
+	li {
+		margin-bottom: 0.6em;
+	}
 }
 
+.header-title {
+	background: var(--title-color);
+	color: var(--bg-color);
+	width: fit-content;
+	padding: 0 5px;
+}

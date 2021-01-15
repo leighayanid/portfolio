@@ -1,58 +1,34 @@
 <template>
 	<Layout>
-		<div class="welcome">
-			<g-image src="~/assets/images/profile.jpeg" alt="welcome-pic" />
-			<div>
-				<h1 class="welcome-text">
-					Mabuhay! I'm <strong>Leigh Dinaya</strong><br />
-					<textra
-						:data="words"
-						:timer="2"
-						:infinite="true"
-						filter="top-bottom"
-					/>
-					I <strong>build</strong> things for the <strong>web</strong>
-				</h1>
-				<p class="welcome-intro">
-					Welcome to my website, a place where I share tips, tutorials, useful
-					links, and where I document my journey through blogging as I discover
-					new things while building software. I write mostly about front-end and
-					back-end engineering.
-				</p>
-			</div>
-		</div>
+		<welcome-intro></welcome-intro>
 		<div class="content">
-			<h3>Featured Articles</h3>
-			<div class="home">
-				<div class="posts">
-					<featured-post></featured-post>
-				</div>
+			<div class="posts">
+				<featured-post></featured-post>
+			</div>
+			<div class="projects">
+				<featured-project></featured-project>
 			</div>
 		</div>
+		<contact-form />
 	</Layout>
 </template>
 
 <script>
 import FeaturedPost from "~/components/FeaturedPost.vue";
-import Textra from "~/components/Textra.vue";
+import FeaturedProject from "../components/FeaturedProject.vue";
+import WelcomeIntro from "../components/WelcomeIntro.vue";
+import ContactForm from "../components/ContactForm.vue";
 
 export default {
 	metaInfo: {
 		title: "Home",
 	},
-	data() {
-		return {
-			words: [
-				"Software Developer",
-				"Front-End Developer",
-				"Generalist Developer",
-				"Lifelong Learner",
-			],
-		};
-	},
+
 	components: {
-		Textra,
 		FeaturedPost,
+		FeaturedProject,
+		WelcomeIntro,
+		ContactForm,
 	},
 };
 </script>
@@ -62,10 +38,15 @@ export default {
 	display: flex;
 	flex-direction: column;
 	width: 75%;
+	margin: 2rem 0;
 
 	@media screen and (max-width: 900px) {
 		width: 100%;
 	}
+}
+
+.projects {
+	margin: 5rem 0;
 }
 
 a {
@@ -80,70 +61,5 @@ h2 {
 hr {
 	width: 25%;
 	margin: 0;
-}
-
-strong {
-	position: relative;
-	background: none;
-
-	&::after {
-		content: "";
-		background: rgba(#e59200, 0.3);
-		position: absolute;
-		left: 10px;
-		bottom: -2px;
-		width: calc(100% - 5px);
-		height: calc(100% - 22.5px);
-		z-index: -10;
-		transition: 0.35s cubic-bezier(0.5, 0.1, 0, 2.05);
-
-		@media screen and (max-width: 800px) {
-			width: calc(100% - 10px);
-			height: calc(100% - 15px);
-		}
-	}
-}
-
-.welcome {
-	font-family: "Merriweather", serif;
-	display: flex;
-	margin: 2rem 0;
-
-	@media screen and (max-width: 800px) {
-		flex-direction: column;
-	}
-
-	img {
-		border-radius: 50%;
-		width: 20%;
-		height: 20%;
-		margin-right: 2rem;
-		box-shadow: 1px 10px 30px 0 rgba(0, 0, 0, 0.1);
-
-		@media screen and (max-width: 800px) {
-			width: 30%;
-			height: 30%;
-			margin: 1rem auto;
-		}
-	}
-
-	&-text {
-		width: 100%;
-		line-height: 1.5;
-		letter-spacing: 1px;
-
-		@media screen and (max-width: 800px) {
-			text-align: center;
-		}
-	}
-
-	&-intro {
-		margin-top: 2rem;
-		width: 85%;
-
-		@media screen and (max-width: 800px) {
-			width: 100%;
-		}
-	}
 }
 </style>

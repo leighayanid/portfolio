@@ -1,11 +1,14 @@
 <template>
 	<div>
-		<PostCard
-			v-for="post in $static.allPost.edges"
-			:key="post.id"
-			:post="post.node"
-		/>
-		<g-link to="/posts">View all</g-link>
+		<h2 class="header-title">Recent Articles</h2>
+		<div>
+			<PostCard
+				v-for="post in $static.allPost.edges"
+				:key="post.id"
+				:post="post.node"
+			/>
+			<g-link to="/blog" class="view-all">View all articles</g-link>
+		</div>
 	</div>
 </template>
 

@@ -21,7 +21,7 @@
 			</p>
 			<p>
 				Have a project you would like to discuss?<br />
-				Hit me up at leighdinaya@protonmail.com<br />
+		 at leighdinaya@protonmail.com<br />
 				Let's build things together.
 			</p>
 			<hr />

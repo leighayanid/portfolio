@@ -1,17 +1,13 @@
 <template>
 	<Layout>
-		<div class="content">
-			<h3>Recent Blogs</h3>
-			<div class="home">
-				<div class="posts">
-					<PostCard
-						v-for="edge in $page.posts.edges"
-						:key="edge.node.id"
-						:post="edge.node"
-					/>
-					<Pager :info="$page.posts.pageInfo" />
-				</div>
-			</div>
+		<div class="posts">
+			<h1 class="heading-title">All Articles</h1>
+			<PostCard
+				v-for="edge in $page.posts.edges"
+				:key="edge.node.id"
+				:post="edge.node"
+			/>
+			<Pager :info="$page.posts.pageInfo" />
 		</div>
 	</Layout>
 </template>
@@ -57,9 +53,8 @@ export default {
 
 <style lang="scss" scoped>
 .posts {
-	display: flex;
-	flex-direction: column;
-	width: 75%;
+	width: 65%;
+	margin: 0 auto;
 
 	@media screen and (max-width: 900px) {
 		width: 100%;

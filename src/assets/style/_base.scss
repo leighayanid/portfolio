@@ -1,62 +1,94 @@
 // Default
 * {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--body-color);
-  transition: color 0.6s, background-color 0.6s;
-  font-family: "Merriweather", serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.75;
+	background-color: var(--bg-color);
+	color: var(--body-color);
+	transition: color 0.6s, background-color 0.6s;
+	font-family: "Merriweather", serif;
+	margin: 0;
+	padding: 0;
+	line-height: 1.75;
 }
 
 a:not(.button) {
-  color: var(--link-color);
-  transition: opacity 0.2s;
-  text-decoration: none;
+	color: var(--link-color);
+	transition: opacity 0.2s;
+	text-decoration: none;
 
-  &:hover {
-    opacity: 0.8;
-  }
+	&:hover {
+		opacity: 0.8;
+	}
 }
 
 a {
-  color: var(--link-color);
-  transition: opacity 0.2s;
-  text-decoration: none;
+	color: var(--link-color);
+	transition: opacity 0.2s;
+	text-decoration: none;
 
-  &:hover {
-    opacity: 0.8;
-  }
+	&:hover {
+		opacity: 0.8;
+	}
 }
 
 img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 nav {
-  margin-top: 1rem;
+	margin-top: 1rem;
 
-  a {
-    font-size: 1.25em;
-    margin-right: 8px;
+	a {
+		font-size: 1.25em;
+		margin-right: 8px;
 
-    &:hover {
-      background: var(--title-color);
-      color: var(--bg-color);
-      border-radius: 5px;
-    }
-  }
+		&:hover {
+			background: var(--title-color);
+			color: var(--bg-color);
+			border-radius: 5px;
+		}
+	}
 
-  .active--exact,
-  .active {
-    background: var(--title-color);
-    color: var(--bg-color);
-    border-radius: 5px;
-  }
+	.active--exact,
+	.active {
+		background: var(--title-color);
+		color: var(--bg-color);
+		border-radius: 5px;
+	}
+}
+
+strong {
+	position: relative;
+	background: none;
+
+	&::after {
+		content: "";
+		background: rgba(#e59200, 0.3);
+		position: absolute;
+		left: 10px;
+		bottom: -2px;
+		width: calc(100% - 5px);
+		height: calc(100% - 22.5px);
+		z-index: -10;
+		transition: 0.35s cubic-bezier(0.5, 0.1, 0, 2.05);
+
+		@media screen and (max-width: 800px) {
+			width: calc(100% - 10px);
+			height: calc(100% - 15px);
+		}
+	}
+}
+
+.view-all {
+	border-bottom: 2px solid var(--title-color);
+	padding-bottom: 0.3rem;
+	margin-top: 10px;
+
+	&:hover {
+		color: var(--link-color);
+	}
 }
