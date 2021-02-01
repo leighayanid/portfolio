@@ -5,9 +5,7 @@
 				<Author />
 			</div>
 			<div>
-				<h1 class="welcome-text">
-					Say hi!
-				</h1>
+				<h1 class="welcome-text">Say hi!</h1>
 				<p>Email: leighdinaya@protonmail.com</p>
 				<p>Phone: +639266781390</p>
 				<form
@@ -25,19 +23,33 @@
 					</p>
 					<div class="form-group">
 						<label for="name" class="label">Your name</label>
-						<input type="text" name="name" v-model="formData.name" />
+						<input
+							type="text"
+							id="name"
+							v-model="formData.name"
+							placeholder="Full name"
+							required
+						/>
 					</div>
 					<div class="form-group">
 						<label for="email">Your email</label>
-						<input type="email" name="email" v-model="formData.email" />
+						<input
+							type="email"
+							id="email"
+							v-model="formData.email"
+							placeholder="Email address"
+							required
+						/>
 					</div>
 
 					<div class="form-group">
 						<label for="message">Message</label>
 						<textarea
-							name="message"
+							id="message"
 							v-model="formData.message"
 							rows="20"
+							placeholder="Your message"
+							required
 						></textarea>
 					</div>
 

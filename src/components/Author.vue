@@ -1,10 +1,11 @@
 <template>
 	<div class="author">
-		<img
-			src="https://github.com/leighayanid.png"
-			alt="pic"
+		<g-image
+			src="~/assets/images/profile.jpeg"
+			alt="welcome-pic"
 			class="author__image"
 		/>
+
 		<div class="author-info">
 			<p class="author-info__intro">
 				Leigh is a software developer based in the Philippines. He builds fast
