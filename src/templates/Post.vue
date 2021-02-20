@@ -31,7 +31,7 @@
 			</div>
 		</div>
 
-		<div class="divider"></div>
+		<hr />
 
 		<Author class="post-author">
 			<ko-fi-button></ko-fi-button>
@@ -108,6 +108,8 @@ query Post ($id: ID!) {
 
 		img {
 			width: 100vw;
+			margin: 2rem 0;
+			border-radius: 5px;
 		}
 
 		a {
@@ -115,7 +117,7 @@ query Post ($id: ID!) {
 			font-style: italic;
 
 			position: absolute;
-			top: 90%;
+			top: 80%;
 			left: 3%;
 
 			&:hover {
@@ -152,6 +154,7 @@ query Post ($id: ID!) {
 
 		p {
 			color: var(--body-color);
+			word-spacing: 1px;
 
 			img {
 				margin-top: 1.5em;
@@ -184,5 +187,13 @@ query Post ($id: ID!) {
 		padding: calc(var(--space) / 6) 0 calc(var(--space) / 6);
 		text-align: center;
 	}
+}
+
+.post-author {
+	margin-top: 3rem;
+}
+
+hr {
+	margin: 5rem 0;
 }
 </style>
