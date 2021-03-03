@@ -5,8 +5,9 @@
 			<h2 class="post-title__text">
 				{{ $page.post.title }}
 			</h2>
-
-			<PostMeta :post="$page.post" />
+			<div class="post-title__meta">
+				<PostMeta :post="$page.post" />
+			</div>
 		</div>
 
 		<div class="post">
@@ -207,6 +208,11 @@ query Post ($id: ID!,  $previousElement: ID!, $nextElement: ID!) {
 	&-title {
 		padding: calc(var(--space) / 6) 0 calc(var(--space) / 6);
 		text-align: center;
+	}
+
+	&-meta {
+		display: grid;
+		place-items: center;
 	}
 
 	&__related {
