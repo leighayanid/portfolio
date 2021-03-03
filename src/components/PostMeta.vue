@@ -55,7 +55,6 @@ export default {
 
 p {
 	display: flex;
-	justify-content: center;
 }
 
 svg {
