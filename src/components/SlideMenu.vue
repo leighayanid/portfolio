@@ -9,11 +9,9 @@
 </template>
 
 <script>
-import { Slide } from "vue-burger-menu";
 import ToggleTheme from "./ToggleTheme";
 export default {
 	components: {
-		Slide,
 		ToggleTheme,
 	},
 };

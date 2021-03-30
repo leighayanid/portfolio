@@ -21,7 +21,6 @@
   "devDependencies": {
     "eslint": "^7.15.0",
     "eslint-plugin-gridsome": "^1.5.0",
-    "gridsome-plugin-purgecss": "^1.0.12",
     "gridsome-plugin-service-worker": "^0.1.5",
     "node-fetch": "^2.6.1",
     "node-sass": "^4.14.1",
