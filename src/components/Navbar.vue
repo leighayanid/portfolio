@@ -2,7 +2,6 @@
 	<div class="nav-header">
 		<div class="nav-header__content">
 			<g-link to="/">LD</g-link>
-			<Slide />
 		</div>
 		<div class="nav-header__links">
 			<g-link to="/blog">Blog</g-link>
@@ -32,11 +31,9 @@
 
 <script>
 import ToggleTheme from "~/components/ToggleTheme.vue";
-import Slide from "~/components/SlideMenu.vue";
 export default {
 	components: {
 		ToggleTheme,
-		Slide,
 	},
 	props: {
 		showDetails: false,
@@ -95,7 +92,6 @@ export default {
 			justify-content: space-around;
 			padding: 0;
 			margin-bottom: 1rem;
-			visibility: hidden;
 		}
 	}
 }
@@ -116,24 +112,5 @@ a {
 	@media screen and (max-width: 800px) {
 		margin-right: 0.7rem;
 	}
-}
-
-.menu {
-	width: 2rem;
-	height: 2rem;
-	position: absolute;
-	top: 0;
-	right: 0;
-	color: var(--title-color);
-	svg {
-		path {
-			color: var(--title-color);
-			background: var(--title-color);
-		}
-	}
-}
-
-svg {
-	padding: 0;
 }
 </style>

@@ -73,14 +73,14 @@ export default {
 	border: 0;
 	color: var(--body-color);
 	cursor: pointer;
-	position: relative;
 
 	@media screen and (max-width: 800px) {
 		position: absolute;
-		top: 5;
-		left: 10;
-		display: none;
+		top: 0;
+		right: 0;
+		margin: 25px;
 	}
+
 	&:hover {
 		opacity: 0.8;
 	}

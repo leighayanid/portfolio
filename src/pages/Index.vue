@@ -9,7 +9,7 @@
 				<featured-project></featured-project>
 			</div>
 		</div>
-		<contact-form />
+		<contact-info />
 	</Layout>
 </template>
 
@@ -17,7 +17,7 @@
 import FeaturedPost from "~/components/FeaturedPost.vue";
 import FeaturedProject from "../components/FeaturedProject.vue";
 import WelcomeIntro from "../components/WelcomeIntro.vue";
-import ContactForm from "../components/ContactForm.vue";
+import ContactInfo from "../components/ContactInfo.vue";
 
 export default {
 	metaInfo: {
@@ -28,7 +28,7 @@ export default {
 		FeaturedPost,
 		FeaturedProject,
 		WelcomeIntro,
-		ContactForm,
+		ContactInfo,
 	},
 };
 </script>
