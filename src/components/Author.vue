@@ -1,7 +1,7 @@
 <template>
 	<div class="author">
 		<g-image
-			src="~/assets/images/profile.jpeg"
+			src="~/assets/images/profile.png"
 			alt="welcome-pic"
 			class="author__image"
 		/>
