@@ -238,11 +238,6 @@ query Post ($id: ID!,  $previousElement: ID!, $nextElement: ID!) {
 		text-align: center;
 	}
 
-	&-meta {
-		display: grid;
-		place-items: center;
-	}
-
 	&__related {
 		width: 100%;
 		display: flex;

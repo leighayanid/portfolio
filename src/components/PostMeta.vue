@@ -50,12 +50,6 @@ export default {
 .post-meta {
 	font-size: 0.8em;
 	opacity: 0.8;
-	margin: 0;
-}
-
-p {
-	display: flex;
-	align-items: flex-start;
 }
 
 svg {
