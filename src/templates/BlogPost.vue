@@ -70,11 +70,39 @@ export default {
 		return {
 			title: this.$page.post.title,
 			meta: [
+				{ key: "og:type", property: "og:type", content: "article" },
+				{
+					key: "og:title",
+					property: "og:title",
+					content: this.$page.post.title,
+				},
 				{
 					name: "description",
 					content: this.$page.post.description,
 				},
+				{
+					key: "article:published_time",
+					property: "article:published_time",
+					content: this.$page.post.date,
+				},
+				{ name: "twitter:title", content: this.$page.post.title },
+				{ name: "twitter:card", content: "summary_large_image" },
+				{
+					name: "twitter:description",
+					content: this.$page.post.description,
+				},
+
+				{
+					name: "twitter:site",
+					content: "https://twitter.com/leighrd_",
+				},
+				{
+					name: "twitter:creator",
+					content: "https://twitter.com/leighrd_",
+				},
+				{ name: "twitter:image", content: this.$page.post.cover_image },
 			],
+			script: [{ src: "https://platform.twitter.com/widgets.js", async: true }],
 		};
 	},
 };
