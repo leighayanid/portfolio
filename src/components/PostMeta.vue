@@ -55,6 +55,7 @@ export default {
 
 p {
 	display: flex;
+	align-items: flex-start;
 }
 
 svg {
