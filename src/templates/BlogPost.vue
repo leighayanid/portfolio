@@ -70,39 +70,26 @@ export default {
 		return {
 			title: this.$page.post.title,
 			meta: [
-				{ key: "og:type", property: "og:type", content: "article" },
+				{ name: "twitter:card", content: "summary_large_image" },
+				{ name: "twitter:description", content: this.$page.post.description },
+				{ name: "twitter:title", content: this.$page.post.title },
+				{ name: "twitter:site", content: "leighdinaya" },
+				{ name: "twitter:image", content: this.getCoverImage },
+				{ name: "twitter:creator", content: "@leighrd_" },
+				{ property: "og:type", content: "article" },
+				{ property: "og:title", content: this.$page.post.title },
+				{ property: "og:description", content: this.$page.post.description },
 				{
-					key: "og:title",
-					property: "og:title",
-					content: this.$page.post.title,
+					property: "og:url",
+					content: `"https://leighdinaya.com/", ${this.$page.post.path}`,
 				},
-				{ property: "og:image", content: this.getCoverImage },
-				{ property: "og:image:secure_url", content: this.getCoverImage },
 				{
-					name: "description",
-					content: this.$page.post.description,
-				},
-				{
-					key: "article:published_time",
 					property: "article:published_time",
 					content: this.$page.post.date,
 				},
-				{ name: "twitter:card", content: "summary_large_image" },
-				{ name: "twitter:title", content: this.$page.post.title },
-				{
-					name: "twitter:description",
-					content: this.$page.post.description,
-				},
-
-				{
-					name: "twitter:site",
-					content: "@leighrd_",
-				},
-				{
-					name: "twitter:creator",
-					content: "@leighrd_",
-				},
-				{ name: "twitter:image", content: this.getCoverImage },
+				{ property: "og:updated_time", content: this.$page.post.date },
+				{ property: "og:image", content: this.getCoverImage },
+				{ property: "og:image:secure_url", content: this.getCoverImage },
 			],
 			script: [{ src: "https://platform.twitter.com/widgets.js", async: true }],
 		};
@@ -148,7 +135,7 @@ export default {
 			let coverImage = "";
 			const cover = this.$page.post.cover_image;
 			if (cover != null) {
-				coverImage = `"https://leighdinaya.com", ${this.$page.post.cover_image.src}`;
+				coverImage = `"https://leighdinaya.com/", ${this.$page.post.cover_image.src}`;
 			}
 			return coverImage;
 		},
