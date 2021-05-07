@@ -76,6 +76,8 @@ export default {
 					property: "og:title",
 					content: this.$page.post.title,
 				},
+				{ property: "og:image", content: this.getCoverImage },
+				{ property: "og:image:secure_url", content: this.getCoverImage },
 				{
 					name: "description",
 					content: this.$page.post.description,
@@ -85,8 +87,8 @@ export default {
 					property: "article:published_time",
 					content: this.$page.post.date,
 				},
-				{ name: "twitter:title", content: this.$page.post.title },
 				{ name: "twitter:card", content: "summary_large_image" },
+				{ name: "twitter:title", content: this.$page.post.title },
 				{
 					name: "twitter:description",
 					content: this.$page.post.description,
@@ -94,13 +96,13 @@ export default {
 
 				{
 					name: "twitter:site",
-					content: "https://twitter.com/leighrd_",
+					content: "@leighrd_",
 				},
 				{
 					name: "twitter:creator",
-					content: "https://twitter.com/leighrd_",
+					content: "@leighrd_",
 				},
-				{ name: "twitter:image", content: this.$page.post.cover_image },
+				{ name: "twitter:image", content: this.getCoverImage },
 			],
 			script: [{ src: "https://platform.twitter.com/widgets.js", async: true }],
 		};
@@ -138,6 +140,24 @@ query Post ($id: ID!,  $previousElement: ID!, $nextElement: ID!) {
 	}
 }
 </page-query>
+
+<script>
+export default {
+	computed: {
+		getCoverImage() {
+			let coverImage = "";
+			const cover = this.$page.post.cover_image;
+			if (cover != null) {
+				coverImage = `${this.getBaseUrl}${this.$page.post.cover_image.src}`;
+			}
+			return coverImage;
+		},
+		getBaseUrl() {
+			return "https://leighdinaya.com/";
+		},
+	},
+};
+</script>
 
 <style lang="scss">
 .post {
