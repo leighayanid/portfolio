@@ -70,26 +70,39 @@ export default {
 		return {
 			title: this.$page.post.title,
 			meta: [
-				{ name: "twitter:card", content: "summary_large_image" },
-				{ name: "twitter:description", content: this.$page.post.description },
-				{ name: "twitter:title", content: this.$page.post.title },
-				{ name: "twitter:site", content: "leighdinaya" },
-				{ name: "twitter:image", content: this.getCoverImage },
-				{ name: "twitter:creator", content: "@leighrd_" },
 				{ property: "og:type", content: "article" },
 				{ property: "og:title", content: this.$page.post.title },
 				{ property: "og:description", content: this.$page.post.description },
 				{
 					property: "og:url",
-					content: `"https://leighdinaya.com/", ${this.$page.post.path}`,
+					content: `'https://leighdinaya.com', ${this.$page.post.path}`,
 				},
 				{
 					property: "article:published_time",
 					content: this.$page.post.date,
 				},
+				{
+					property: "og:image",
+					content: "https://leighdinaya.com/assets/static/icon.png",
+				},
 				{ property: "og:updated_time", content: this.$page.post.date },
-				{ property: "og:image", content: this.getCoverImage },
-				{ property: "og:image:secure_url", content: this.getCoverImage },
+				{ name: "twitter:title", content: this.$page.post.title },
+				{
+					name: "twitter:description",
+					content: this.$page.post.description,
+				},
+				{
+					name: "twitter:site",
+					content: "https://twitter.com/leighrd_",
+				},
+				{
+					name: "twitter:creator",
+					content: "https://twitter.com/leighrd_",
+				},
+				{
+					name: "twitter:image",
+					content: "https://leighdinaya.com/assets/static/icon.png",
+				},
 			],
 			script: [{ src: "https://platform.twitter.com/widgets.js", async: true }],
 		};
@@ -127,21 +140,6 @@ query Post ($id: ID!,  $previousElement: ID!, $nextElement: ID!) {
 	}
 }
 </page-query>
-
-<script>
-export default {
-	computed: {
-		getCoverImage() {
-			let coverImage = "";
-			const cover = this.$page.post.cover_image;
-			if (cover != null) {
-				coverImage = `"https://leighdinaya.com/", ${this.$page.post.cover_image.src}`;
-			}
-			return coverImage;
-		},
-	},
-};
-</script>
 
 <style lang="scss">
 .post {
