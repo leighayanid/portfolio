@@ -83,7 +83,7 @@ export default {
 				},
 				{
 					property: "og:image",
-					content: "https://leighdinaya.com/assets/static/icon.png",
+					content: "https://leighdinaya.com/assets/icon.png",
 				},
 				{ property: "og:updated_time", content: this.$page.post.date },
 				{ name: "twitter:title", content: this.$page.post.title },
@@ -101,7 +101,7 @@ export default {
 				},
 				{
 					name: "twitter:image",
-					content: "https://leighdinaya.com/assets/static/icon.png",
+					content: "https://leighdinaya.com/assets/icon.png",
 				},
 			],
 			script: [{ src: "https://platform.twitter.com/widgets.js", async: true }],
