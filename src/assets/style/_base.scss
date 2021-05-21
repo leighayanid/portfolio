@@ -15,6 +15,11 @@ body {
 	line-height: 1.75;
 }
 
+#app {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
 a:not(.button) {
 	color: var(--link-color);
 	transition: opacity 0.2s;

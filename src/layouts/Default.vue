@@ -60,6 +60,10 @@ export default {
 	border: 2px solid #eff1f5;
 }
 
+#app {
+	
+}
+
 .header {
 	display: flex;
 	justify-content: space-between;
