@@ -1,8 +1,6 @@
 <template>
 	<Layout>
-		<h1 class="welcome-text">
-			My recent work
-		</h1>
+		<h1 class="welcome-text">My recent work</h1>
 		<p class="welcome-intro">
 			A place where I put my work. Here you can find some of selected projects
 			I've been working on for a while.

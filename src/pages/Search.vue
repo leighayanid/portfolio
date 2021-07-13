@@ -1,9 +1,7 @@
 <template>
 	<Layout>
 		<div class="search">
-			<h1 class="welcome-text">
-				Search..
-			</h1>
+			<h1 class="welcome-text">Search..</h1>
 			<p>
 				Type any topic that you're looking for. Ex: Vue, Gridsome, Javascript
 			</p>

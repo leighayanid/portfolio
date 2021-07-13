@@ -1,0 +1,15 @@
+{
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	},
+	"editor.validate": ["javascript"],
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"stylelint.enable": true,
+	"css.validate": true,
+	"scss.validate": true,
+	"vetur.validation.style": false,
+	"vetur.format.defaultFormatter.css": "none",
+	"vetur.format.defaultFormatter.postcss": "none",
+	"vetur.format.defaultFormatter.scss": "none"
+}

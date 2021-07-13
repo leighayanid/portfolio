@@ -1,9 +1,7 @@
 <template>
 	<Layout>
 		<div class="about">
-			<h1 class="welcome-text">
-				About Me
-			</h1>
+			<h1 class="welcome-text">About Me</h1>
 			<p>
 				I'm Leigh Dinaya. I'm a programmer based in the Philippines. I build
 				websites and applications and I've been coding since 2011.
@@ -13,7 +11,7 @@
 				Node.js.
 			</p>
 			<hr />
-			<p style="margin-top: 1rem;">
+			<p style="margin-top: 1rem">
 				Education: <br />
 				Bataan Peninsula State University<br />
 				Bachelor of Science in Computer Science Major in Software Development<br />
@@ -21,7 +19,7 @@
 			</p>
 			<p>
 				Have a project you would like to discuss?<br />
-		 at leighdinaya@protonmail.com<br />
+				at leighdinaya@protonmail.com<br />
 				Let's build things together.
 			</p>
 			<hr />

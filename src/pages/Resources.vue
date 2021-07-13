@@ -1,22 +1,20 @@
 <template>
-  <Layout>
-    <div class="links">
-      <h1 class="welcome-text">
-        Useful resources, bookmarks, tutorials
-      </h1>
-      <p class="welcome-intro">
-        A place where I put things to read. Here you can find useful links.
-        Topics are mostly about front-end and back-end development.
-      </p>
-      <GridsomeSearch />
-      <LinkCard
-        v-for="edge in $page.resources.edges"
-        :key="edge.node.id"
-        :resource="edge.node"
-      />
-      <Pager :info="$page.resources.pageInfo" />
-    </div>
-  </Layout>
+	<Layout>
+		<div class="links">
+			<h1 class="welcome-text">Useful resources, bookmarks, tutorials</h1>
+			<p class="welcome-intro">
+				A place where I put things to read. Here you can find useful links.
+				Topics are mostly about front-end and back-end development.
+			</p>
+			<GridsomeSearch />
+			<LinkCard
+				v-for="edge in $page.resources.edges"
+				:key="edge.node.id"
+				:resource="edge.node"
+			/>
+			<Pager :info="$page.resources.pageInfo" />
+		</div>
+	</Layout>
 </template>
 
 <page-query>
@@ -43,15 +41,15 @@ import { Pager } from "gridsome";
 import GridsomeSearch from "~/components/GridsomeSearch";
 
 export default {
-  components: {
-    LinkCard,
-    Pager,
-    GridsomeSearch,
-  },
-  metaInfo: {
-    title: "Resources",
-  },
-  // mixins: [Search]
+	components: {
+		LinkCard,
+		Pager,
+		GridsomeSearch,
+	},
+	metaInfo: {
+		title: "Resources",
+	},
+	// mixins: [Search]
 };
 </script>
 

@@ -1,8 +1,8 @@
 <template>
-  <div class="error">
-    <h1>404 - Not found.</h1>
-    <g-link to="/">Go home now</g-link>
-  </div>
+	<div class="error">
+		<h1>404 - Not found.</h1>
+		<g-link to="/">Go home now</g-link>
+	</div>
 </template>
 
 <style lang="scss" scoped>

@@ -1,6 +1,6 @@
 <template>
 	<div class="welcome">
-		<g-image src="~/assets/images/profile.png" alt="welcome-pic" />
+		<g-image src="~/assets/images/profile.webp" alt="welcome-pic" />
 		<div>
 			<h1 class="welcome-text">
 				Mabuhay! I'm <strong>Leigh Dinaya</strong><br />
