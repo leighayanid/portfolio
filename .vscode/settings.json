@@ -8,8 +8,8 @@
 	"stylelint.enable": true,
 	"css.validate": true,
 	"scss.validate": true,
-	"vetur.validation.style": false,
-	"vetur.format.defaultFormatter.css": "none",
-	"vetur.format.defaultFormatter.postcss": "none",
-	"vetur.format.defaultFormatter.scss": "none"
+	"vetur.validation.style": true,
+	"vetur.format.defaultFormatter.css": "prettier",
+	"vetur.format.defaultFormatter.postcss": "prettier",
+	"vetur.format.defaultFormatter.scss": "prettier"
 }

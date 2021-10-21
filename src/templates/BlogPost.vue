@@ -209,7 +209,7 @@ query Post ($id: ID!,  $previousElement: ID!, $nextElement: ID!) {
 			word-spacing: 1px;
 
 			img {
-				margin-top: 1.5em;
+				margin: 3.5em 0;
 			}
 		}
 
@@ -223,7 +223,7 @@ query Post ($id: ID!,  $previousElement: ID!, $nextElement: ID!) {
 		}
 
 		pre {
-			margin-bottom: 1.5rem;
+			margin: 2.5rem 0;
 		}
 
 		a {
