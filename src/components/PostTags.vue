@@ -19,17 +19,18 @@ export default {
 
 <style lang="scss">
 .post-tags {
-  margin: 0.5em 0 0;
+	margin: 0.5em 0 0;
+	z-index: 100;
 
-  &__link {
-    margin-right: 0.5em;
-    font-size: 0.7em;
-    color: currentColor;
-    text-decoration: none;
-    background-color: var(--bg-color);
-    color: currentColor !important; //Todo: remove important;
-    padding: 0.35em;
-    border-radius: 5px;
-  }
+	&__link {
+		margin-right: 0.5em;
+		font-size: 0.7em;
+		color: currentColor;
+		text-decoration: none;
+		background-color: var(--bg-color);
+		color: currentColor !important; //Todo: remove important;
+		padding: 0.35em;
+		border-radius: 5px;
+	}
 }
 </style>

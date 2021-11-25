@@ -97,3 +97,36 @@ strong {
 		color: var(--link-color);
 	}
 }
+
+.omnibar {
+	a.active--exact {
+		border-left: 2px solid rgb(39, 39, 39);
+		padding-left: 10px;
+	}
+
+	h3 {
+		color: rgb(39, 39, 39);
+	}
+
+	&-search {
+		padding: 2% 5%;
+	}
+
+	&-search-list a {
+		display: inline-block;
+		width: 100%;
+		color: var(--body-color);
+	}
+	z-index: 5000;
+}
+
+.omnibar-inside {
+	border-radius: 5%;
+	background: var(--bg-color);
+	box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.02),
+		1px 1px 15px 0 rgba(0, 0, 0, 0.03);
+
+	a {
+		color: rgb(39, 39, 39);
+	}
+}
