@@ -4,27 +4,29 @@
 		<transition name="fade" appear>
 			<main class="main" id="page-wrap">
 				<slot />
-				<omnibar :data="data" :initial="data.slice(0, 4)">
-					<h3 slot="header">Command Palette</h3>
-					<template #initial="{ initial }">
-						<div
-							v-for="item in initial"
-							:key="item"
-							class="omnibar-search-initial-list"
-						>
-							<g-link :to="item.url" v-text="item.text"></g-link>
-						</div>
-					</template>
-					<template #results="{ results }">
-						<div
-							v-for="item in results"
-							:key="item"
-							class="omnibar-search-results-list"
-						>
-							<g-link :to="item.url" v-text="item"></g-link>
-						</div>
-					</template>
-				</omnibar>
+				<ClientOnly>
+					<omnibar :data="data" :initial="data.slice(0, 4)">
+						<h3 slot="header">Command Palette</h3>
+						<template #initial="{ initial }">
+							<div
+								v-for="item in initial"
+								:key="item"
+								class="omnibar-search-initial-list"
+							>
+								<g-link :to="item.url" v-text="item.text"></g-link>
+							</div>
+						</template>
+						<template #results="{ results }">
+							<div
+								v-for="item in results"
+								:key="item"
+								class="omnibar-search-results-list"
+							>
+								<g-link :to="item.url" v-text="item"></g-link>
+							</div>
+						</template>
+					</omnibar>
+				</ClientOnly>
 			</main>
 		</transition>
 		<Footer />
