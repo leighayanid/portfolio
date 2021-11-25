@@ -8,10 +8,9 @@
 				I <strong>build</strong> things for the <strong>web</strong>
 			</h1>
 			<p class="welcome-intro">
-				Welcome to my website, a place where I share tips, tutorials, useful
-				links, and where I document my journey through blogging as I discover
-				new things while building software. I write mostly about front-end and
-				back-end engineering.
+				I'm a <strong>software developer</strong> with a passion for
+				<strong>creativity</strong> and <strong>innovation</strong>. I solve
+				problems and create solutions for the modern <strong>web</strong>.
 			</p>
 		</div>
 	</div>
