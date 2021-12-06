@@ -22,7 +22,7 @@ import ContactInfo from "../components/ContactInfo.vue";
 export default {
 	metaInfo: {
 		title: "Home",
-	},
+	},	
 
 	components: {
 		FeaturedPost,

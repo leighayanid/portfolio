@@ -11,5 +11,8 @@
 	"vetur.validation.style": true,
 	"vetur.format.defaultFormatter.css": "prettier",
 	"vetur.format.defaultFormatter.postcss": "prettier",
-	"vetur.format.defaultFormatter.scss": "prettier"
+	"vetur.format.defaultFormatter.scss": "prettier",
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
