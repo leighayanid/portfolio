@@ -48,21 +48,6 @@ module.exports = {
 			// Create posts from markdown files
 			use: "@gridsome/source-filesystem",
 			options: {
-				typeName: "Blog",
-				path: "content/blogs/*.md",
-				refs: {
-					// Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
-					tags: {
-						typeName: "Tag",
-						create: true,
-					},
-				},
-			},
-		},
-		{
-			// Create posts from markdown files
-			use: "@gridsome/source-filesystem",
-			options: {
 				typeName: "Project",
 				path: "content/projects/*.md",
 			},
