@@ -90,6 +90,14 @@ module.exports = {
 			},
 		},
 		{
+			use: "gridsome-plugin-gtag",
+			options: {
+				config: {
+					id: "UA-156810526-1",
+				},
+			},
+		},
+		{
 			use: "gridsome-plugin-service-worker",
 			options: {
 				networkFirst: {
