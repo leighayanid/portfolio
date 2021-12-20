@@ -29,6 +29,7 @@
 
 			<div class="post__footer">
 				<PostTags :post="$page.post" />
+				<scroll-to-top v-show="showScrollTop"></scroll-to-top>
 			</div>
 
 			<div class="post__related">
@@ -57,14 +58,27 @@ import PostTags from "~/components/PostTags";
 import Author from "~/components/Author.vue";
 import VueCobra from "~/components/VueCobra.vue";
 import KoFiButton from "../components/KoFiButton.vue";
+import ScrollToTop from "../components/ScrollToTop.vue";
 
 export default {
+	data() {
+		return {
+			showScrollTop: false,
+		};
+	},
+	mounted() {
+		window.addEventListener("scroll", () => {
+			const windowHeight = window.innerHeight;
+			this.showScrollTop = window.scrollY > 1000;
+		});
+	},
 	components: {
 		Author,
 		PostMeta,
 		PostTags,
 		VueCobra,
 		KoFiButton,
+		ScrollToTop,
 	},
 	metaInfo() {
 		return {
