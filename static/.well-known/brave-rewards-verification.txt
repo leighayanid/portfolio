@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: leighdinaya.com
+Token: 1748479ed1c02372f05c6121b6afa3ce6496e290ef6832fc495f0043cd883fbc
