@@ -1,10 +1,10 @@
 <template>
-	<Layout>
-		<div class="success">
-			<h1>Thanks for dropping a message.</h1>
-			<p>I'll be in touch soon!</p>
-		</div>
-	</Layout>
+  <Layout>
+    <div class="success">
+      <h1>Thanks for dropping a message.</h1>
+      <p>I'll be in touch soon!</p>
+    </div>
+  </Layout>
 </template>
 
 <style lang="scss" scoped>

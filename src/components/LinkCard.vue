@@ -1,16 +1,16 @@
 <template>
-	<div class="link-card">
-		<g-link class="link-card__content" :to="resource.link">
-			<h5 class="link-card__title" v-html="resource.title" />
-			<p class="link-card__text" v-html="resource.link" />
-		</g-link>
-	</div>
+  <div class="link-card">
+    <g-link class="link-card__content" :to="resource.link">
+      <h5 class="link-card__title" v-html="resource.title" />
+      <p class="link-card__text" v-html="resource.link" />
+    </g-link>
+  </div>
 </template>
 
 <script>
 export default {
-	props: ["resource"],
-};
+  props: ['resource'],
+}
 </script>
 
 <style lang="scss">
