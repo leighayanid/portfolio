@@ -21,12 +21,7 @@ import Textra from '~/components/TextraPlugin.vue'
 export default {
   data() {
     return {
-      words: [
-        'Software Developer',
-        'Front-End Developer',
-        'Generalist Developer',
-        'Lifelong Learner',
-      ],
+      words: ['Software Developer', 'Front-End Developer', 'Lifelong Learner'],
     }
   },
   components: {
