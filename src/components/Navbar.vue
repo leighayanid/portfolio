@@ -1,7 +1,7 @@
 <template>
   <div class="nav-header">
     <div class="nav-header__content">
-      <g-link to="/">LD</g-link>
+      <g-link to="/">LD 🇺🇦</g-link>
     </div>
     <div class="nav-header__links">
       <g-link to="/blog">Blog</g-link>
